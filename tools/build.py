@@ -118,6 +118,18 @@ FOOT = f"""
       var open = n.classList.toggle('open');
       t.setAttribute('aria-expanded', open ? 'true' : 'false');
     }});
+    var fmt = function (d) {{ if (!d) return ''; var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; var p = d.split('-'); return parseInt(p[2], 10) + ' ' + m[parseInt(p[1], 10) - 1]; }};
+    var tk = document.getElementById('ticker');
+    if (tk && window.fetch) {{
+      fetch('assets/news.json', {{cache: 'no-cache'}}).then(function (r) {{ return r.json(); }}).then(function (d) {{
+        if (!d.items || !d.items.length) return;
+        var html = d.items.map(function (it) {{
+          return '<li><a href="' + it.url + '" rel="noopener"><time>' + fmt(it.date) + '</time>' + it.title.replace(/</g, '&lt;') + '</a></li>';
+        }}).join('');
+        tk.innerHTML = '<ul class="ticker-list">' + html + '</ul><ul class="ticker-list" aria-hidden="true">' + html + '</ul>';
+        tk.classList.add('run');
+      }}).catch(function () {{ tk.innerHTML = '<ul class="ticker-list"><li><a href="https://www.theregister.com/security/" rel="noopener">Latest security news at The Register</a></li></ul>'; }});
+    }}
     var arts = document.querySelectorAll('.art');
     if ('IntersectionObserver' in window) {{
       var io = new IntersectionObserver(function (es) {{
@@ -185,6 +197,13 @@ pages["index.html"] = ("Fractional CISO, penetration testing and GRC consultancy
 hero(None, "Consultants who have run the blue team, not just tested it.",
      "Cablons Cyber is an independent consultancy whose people have defended networks, tested them and audited them. We give you fractional CISO leadership without the full-time cost, test your defences, and close the gaps auditors and customers care about.",
      f'<a class="btn btn-gold" href="{CAL}">Book a free consultation</a><a class="btn btn-ghost" href="#services">See what we do</a>') + f"""
+
+<section class="ticker" aria-label="Security news headlines">
+  <div class="wrap ticker-wrap">
+    <a class="ticker-label" href="https://www.theregister.com/security/" rel="noopener">Security news from The Register</a>
+    <div class="ticker-track" id="ticker"><ul class="ticker-list"><li>Loading headlines&hellip;</li></ul></div>
+  </div>
+</section>
 
 <section class="section on-bone" id="services">
   <div class="wrap">
@@ -663,7 +682,7 @@ with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write("</urlset>\n")
 with open(os.path.join(OUT, "robots.txt"), "w") as f:
     f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-with open(os.path.join(OUT, "CNAME"), "w") as f:
+with open(os.path.join(OUT, "CNAME.when-ready"), "w") as f:
     f.write("www.cablons.com\n")
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 print("built", list(pages))
