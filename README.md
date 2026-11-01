@@ -8,7 +8,7 @@ Static site for www.cablons.com. Plain HTML and CSS, no build step, intended for
 - `styles.css` (all styling, one file)
 - `assets/logo.svg` (gold logo, used in header and footer), plus `logo-white.svg` and `logo-black.svg` for other uses
 - `assets/favicon.png`, `apple-touch-icon.png`, `android-chrome.png` from the logo pack
-- `assets/news.json` (security headlines, refreshed by `.github/workflows/news.yml` every three hours using `tools/fetch_news.py`; shown in the ticker on the home page)
+- `assets/news.json` (security headlines from The Hacker News, refreshed by `.github/workflows/news.yml` every three hours using `tools/fetch_news.py`; shown in the ticker on the home page)
 - `sitemap.xml`, `robots.txt`, `CNAME.when-ready`, `.nojekyll`
 
 ## Before you publish

@@ -128,7 +128,7 @@ FOOT = f"""
         }}).join('');
         tk.innerHTML = '<ul class="ticker-list">' + html + '</ul><ul class="ticker-list" aria-hidden="true">' + html + '</ul>';
         tk.classList.add('run');
-      }}).catch(function () {{ tk.innerHTML = '<ul class="ticker-list"><li><a href="https://www.theregister.com/security/" rel="noopener">Latest security news at The Register</a></li></ul>'; }});
+      }}).catch(function () {{ tk.innerHTML = '<ul class="ticker-list"><li><a href="https://thehackernews.com/" rel="noopener">Latest security news at The Hacker News</a></li></ul>'; }});
     }}
     var arts = document.querySelectorAll('.art');
     if ('IntersectionObserver' in window) {{
@@ -200,7 +200,7 @@ hero(None, "Consultants who have run the blue team, not just tested it.",
 
 <section class="ticker" aria-label="Security news headlines">
   <div class="wrap ticker-wrap">
-    <a class="ticker-label" href="https://www.theregister.com/security/" rel="noopener">Security news from The Register</a>
+    <a class="ticker-label" href="https://thehackernews.com/" rel="noopener">Security news from The Hacker News</a>
     <div class="ticker-track" id="ticker"><ul class="ticker-list"><li>Loading headlines&hellip;</li></ul></div>
   </div>
 </section>
