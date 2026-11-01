@@ -132,6 +132,33 @@ p:last-child { margin-bottom: 0; }
   .btn:hover { transform: none; }
 }
 
+
+/* News ticker */
+.ticker { background: var(--navy); color: #fff; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); font-size: .92rem; }
+.ticker-wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 52px; }
+.ticker-label { flex: none; color: var(--gold-pale); text-decoration: none; font-weight: 600; padding-right: 1.5rem; border-right: 1px solid var(--rule-dark); white-space: nowrap; }
+.ticker-label:hover { color: #fff; }
+.ticker-track { flex: 1; min-width: 0; overflow: hidden; display: flex;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent); mask-image: linear-gradient(90deg, transparent 0, #000 3%, #000 97%, transparent); }
+.ticker-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; flex: none; white-space: nowrap; }
+.ticker-list li { padding: 0 2rem 0 0; display: flex; align-items: center; }
+.ticker-list li::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-left: 2rem; flex: none; }
+.ticker-list a { color: rgba(255,255,255,0.85); text-decoration: none; }
+.ticker-list a:hover { color: var(--gold-pale); }
+.ticker-list time { color: var(--slate-on-dark); margin-right: .6rem; font-variant-numeric: tabular-nums; }
+.ticker-track.run .ticker-list { animation: ticker 70s linear infinite; }
+.ticker-track:hover .ticker-list, .ticker-track:focus-within .ticker-list { animation-play-state: paused; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { overflow-x: auto; mask-image: none; -webkit-mask-image: none; }
+  .ticker-track.run .ticker-list { animation: none; }
+  .ticker-track .ticker-list[aria-hidden] { display: none; }
+}
+@media (max-width: 640px) {
+  .ticker-wrap { flex-direction: column; align-items: stretch; gap: .4rem; padding: .7rem 0; }
+  .ticker-label { border-right: 0; padding-right: 0; font-size: .85rem; }
+}
+
 /* Sections */
 .section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
 .on-bone { background: var(--bone); color: var(--ink); }

@@ -1,0 +1,32 @@
+{
+  "source": "The Register",
+  "source_url": "https://www.theregister.com/security/",
+  "updated": "2026-10-24T00:00:00Z",
+  "items": [
+    {
+      "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
+      "url": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215",
+      "date": "2026-10-24"
+    },
+    {
+      "title": "Hackers pile on PHP2Shell as AWS reveals attacks began before disclosure",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/22/hackers-pile-on-php2shell-as-aws-reveals-attacks-began-before-disclosure/5304749",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "LiteLLM supply chain attack hoovers up passwords and secrets",
+      "url": "https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "'Password1' and a forgotten test account land Welsh outfits in hot water",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/20/password1-and-a-forgotten-test-account-land-welsh-outfits-in-hot-water/5304139",
+      "date": "2026-10-20"
+    }
+  ]
+}
