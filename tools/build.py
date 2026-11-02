@@ -615,7 +615,8 @@ hero(None, "Insights", "Occasional writing on risk, leadership and the parts of 
 pages[ARTICLE_SLUG] = ("Assess your firm for the business-ending event | Cablons Cyber",
 "Most security programmes are built around controls rather than consequences. A guide to assessing the one or two events that would end the business, and building the risk assessment from there.",
 hero(None, "Assess your firm for the business-ending event.",
-     "If your security meetings are spent arguing over DLP products, you are probably missing the one scenario that matters.", "", seed=61, pos="top") + """
+     "If your security meetings are spent arguing over DLP products, you are probably missing the one scenario that matters.",
+     f'<a class="btn btn-gold" href="{CAL}">Found this useful? Contact us</a>', seed=61, pos="top") + """
 <section class="section on-bone">
   <div class="wrap prose">
     <p class="muted">Cablons Cyber. November 2026. About eight minutes.</p>
