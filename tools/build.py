@@ -658,7 +658,13 @@ hero(None, "Assess your firm for the business-ending event.",
 
     <p class="pull">Security is not a list of products. It is knowing which week would be your last, and making sure it never arrives.</p>
 
-    <p class="muted">Cablons Cyber provides fractional CISO services, penetration testing and ISO 27001 consultancy to UK businesses and MSP partners. If you would like help running this kind of assessment, <a href="contact.html">get in touch</a>.</p>
+    <p class="muted">Cablons Cyber provides fractional CISO services, penetration testing and ISO 27001 consultancy to UK businesses and MSP partners.</p>
+
+    <div class="article-cta">
+      <h3>Found this useful? Contact us.</h3>
+      <p class="muted">A 30-minute call is enough to work out whether your current risk assessment would catch the events that matter.</p>
+      <a class="btn btn-gold" href="https://calendly.com/shaun-wakefield-cablons">Book a free call</a>
+    </div>
   </div>
 </section>
 """)

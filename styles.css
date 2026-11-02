@@ -240,6 +240,11 @@ p:last-child { margin-bottom: 0; }
 .checks-bone li { padding-left: 1.5rem; position: relative; }
 .checks-bone li::before { content: ""; position: absolute; left: 0; top: .6em; width: .55rem; height: .55rem; border-radius: 50%; background: var(--gold); }
 
+/* Article closing call to action */
+.article-cta { margin-top: 2.5rem; padding: 1.8rem; background: #fff; border: 1px solid var(--hair); border-top: 2px solid var(--gold); }
+.article-cta h3 { font-weight: 500; margin-bottom: .4rem; }
+.article-cta p { margin-bottom: 1.2rem; }
+
 /* FAQ */
 .faq details { border-top: 1px solid var(--hair); padding: 1.1rem 0; }
 .faq details:last-of-type { border-bottom: 1px solid var(--hair); }
