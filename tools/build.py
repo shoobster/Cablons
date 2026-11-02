@@ -51,7 +51,7 @@ def head(title, desc, path):
   "url": "{SITE}/",
   "logo": "{SITE}/assets/logo.svg",
   "email": "sales@cablons.com",
-  "address": {{"@type": "PostalAddress", "streetAddress": "36 The Oval", "addressLocality": "Bingley", "addressRegion": "West Yorkshire", "postalCode": "BD16 4RQ", "addressCountry": "GB"}},
+  "address": {{"@type": "PostalAddress", "addressRegion": "West Yorkshire", "addressCountry": "GB"}},
   "areaServed": "United Kingdom",
   "description": "{desc}"
 }}
@@ -101,7 +101,7 @@ FOOT = f"""
         <ul>
           <li><a href="mailto:sales@cablons.com">sales@cablons.com</a></li>
           <li><a href="{CAL}">Book a free consultation</a></li>
-          <li>36 The Oval, Bingley<br>West Yorkshire, BD16 4RQ</li>
+          <li>West Yorkshire, United Kingdom</li>
         </ul>
       </div>
     </div>
@@ -469,7 +469,7 @@ hero(None, "Senior security leadership, a few days a month.",
 """)
 
 pages["about.html"] = ("About Cablons Cyber | Independent UK cyber security consultancy",
-"Cablons Cyber Limited is an independent cyber security and GRC consultancy in Bingley, West Yorkshire, with CISSP and ISO 27001 Lead Auditor certified consultants from blue team, testing and audit backgrounds.",
+"Cablons Cyber Limited is an independent cyber security and GRC consultancy in West Yorkshire, with CISSP and ISO 27001 Lead Auditor certified consultants from blue team, testing and audit backgrounds.",
 hero(None, "Independent, consultant-led, based in West Yorkshire.",
      "Cablons Cyber was founded to give smaller organisations the quality of security advice that is normally reserved for enterprises that can afford a full-time CISO.",
      "", seed=19, pos="bottom") + f"""
@@ -478,7 +478,7 @@ hero(None, "Independent, consultant-led, based in West Yorkshire.",
   <div class="wrap split">
     <div class="prose">
       <h2>Who we are</h2>
-      <p>Cablons Cyber Limited is a UK registered consultancy based in Bingley, working with clients across England and further afield by remote delivery. We are deliberately small, and every engagement is led by a senior consultant rather than handed down. Our consultants hold CISSP and ISO 27001 Lead Auditor certifications and have come to consultancy from the defending side: the founder spent a decade on the blue team at an ISP, running first-line security and then the network team, before fifteen years in penetration testing, ISO 27001 audit and implementation, and advisory work. We hire and partner with people who have the same mix of hands-on and governance experience.</p>
+      <p>Cablons Cyber Limited is a UK registered consultancy based in West Yorkshire, working with clients across England and further afield by remote delivery. We are deliberately small, and every engagement is led by a senior consultant rather than handed down. Our consultants hold CISSP and ISO 27001 Lead Auditor certifications and have come to consultancy from the defending side: the founder spent a decade on the blue team at an ISP, running first-line security and then the network team, before fifteen years in penetration testing, ISO 27001 audit and implementation, and advisory work. We hire and partner with people who have the same mix of hands-on and governance experience.</p>
       <h2>How we think about security</h2>
       <p>Security is a business function. The point of a penetration test is not a long list of findings; it is a shorter list of things that would actually hurt, fixed. The point of ISO 27001 is not the certificate; it is a business that can show a customer, an insurer or a regulator how it manages risk, and keep doing so after the auditor leaves.</p>
       <p class="pull">We scope tightly, write in plain English, rank by business impact rather than CVSS alone, and tell clients when they are about to spend money on something that will not reduce risk.</p>
@@ -496,7 +496,6 @@ hero(None, "Independent, consultant-led, based in West Yorkshire.",
       <dl>
         <dt>Registered name</dt><dd>Cablons Cyber Limited</dd>
         <dt>Company number</dt><dd>15090311, registered in England and Wales</dd>
-        <dt>Registered office</dt><dd>36 The Oval, Bingley, West Yorkshire, BD16 4RQ</dd>
         <dt>Consultant credentials</dt><dd>CISSP, ISO/IEC 27001 Lead Auditor</dd>
         <dt>Coverage</dt><dd>UK wide, on site across the North of England, remote elsewhere</dd>
       </dl>
@@ -550,7 +549,7 @@ hero(None, "Let's talk about what you need.",
       <dl>
         <dt>Email</dt><dd><a href="mailto:sales@cablons.com">sales@cablons.com</a></dd>
         <dt>Book directly</dt><dd><a href="{CAL}">Choose a time on our calendar</a></dd>
-        <dt>Office</dt><dd>36 The Oval, Bingley, West Yorkshire, BD16 4RQ</dd>
+        <dt>Location</dt><dd>West Yorkshire. We work on site across the North of England and remotely across the UK.</dd>
         <dt>Hours</dt><dd>Monday to Friday, 9am to 5.30pm. Incident support for retained clients is available outside these hours.</dd>
       </dl>
     </div>
@@ -676,7 +675,7 @@ hero(None, "Privacy notice", "Last reviewed October 2026.", "", small=True, seed
 <section class="section on-bone">
   <div class="wrap prose">
     <h2>Who we are</h2>
-    <p>Cablons Cyber Limited (company number 15090311) is the data controller for personal data collected through this website. Our registered office is 36 The Oval, Bingley, West Yorkshire, BD16 4RQ. You can contact us about data protection at <a href="mailto:sales@cablons.com">sales@cablons.com</a>.</p>
+    <p>Cablons Cyber Limited (company number 15090311) is the data controller for personal data collected through this website. Our registered office address is available from Companies House under that number. You can contact us about data protection at <a href="mailto:sales@cablons.com">sales@cablons.com</a>.</p>
     <h2>What we collect and why</h2>
     <p>When you submit the contact form or email us, we collect your name, email address, and any company, phone number or message details you provide. We use this to respond to your enquiry and, where you become a client, to deliver and administer our services. The lawful basis is our legitimate interest in responding to enquiries and, for clients, performance of a contract.</p>
     <p>When you book a call through our scheduling link, your details are processed by Calendly under its own privacy notice. When you submit the contact form, the submission is relayed by our form provider, which processes it on our behalf.</p>
