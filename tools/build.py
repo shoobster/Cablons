@@ -214,7 +214,7 @@ hero(None, "Consultants who have run the blue team, not just tested it.",
     {ledger([
       ("Fractional CISO", "A named senior security lead for a few days a month. Strategy, risk, board reporting, supplier and customer due diligence, and someone accountable for the roadmap.", "vciso.html"),
       ("Penetration testing", "Infrastructure, web application, cloud and social engineering testing, scoped to your actual risk and reported in language the board can act on.", "penetration-testing.html"),
-      ("GRC and compliance", "ISO 27001 gap analysis and implementation, Cyber Essentials, NIST CSF and PCI DSS readiness, policies and internal audit.", "grc-consultancy.html"),
+      ("GRC and compliance", "ISO 27001 gap analysis and implementation, Cyber Essentials, NIST CSF, SOC 2, NCSC CAF and COBIT readiness, policies and internal audit.", "grc-consultancy.html"),
     ])}
   </div>
 </section>
@@ -360,7 +360,7 @@ hero(None, "Find out what an attacker would find, before they do.",
 """)
 
 pages["grc-consultancy.html"] = ("ISO 27001, Cyber Essentials and GRC consultancy | Cablons Cyber",
-"ISO 27001 gap analysis and implementation, Cyber Essentials, NIST CSF and PCI DSS readiness, policy writing and internal audit from an ISO 27001 Lead Auditor.",
+"ISO 27001, Cyber Essentials, NIST CSF 2.0, SOC 2, NCSC CAF, COBIT 2019 and PCI DSS consultancy: gap analysis, implementation, readiness assessment, policies and internal audit.",
 hero(None, "Get certified, stay certified, and keep the paperwork proportionate.",
      "Practical GRC consultancy from an ISO 27001 Lead Auditor who has implemented management systems as well as audited them.",
      f'<a class="btn btn-gold" href="{CAL}">Discuss a gap analysis</a>', seed=13, pos="bottom") + f"""
@@ -371,11 +371,30 @@ hero(None, "Get certified, stay certified, and keep the paperwork proportionate.
     {ledger([
       ("ISO 27001 gap analysis", "A structured review against ISO 27001:2022 and Annex A, producing a clause-by-clause gap report, a prioritised plan and a realistic estimate of the time and cost to certification.", None),
       ("ISO 27001 implementation", "Risk assessment, Statement of Applicability, policy set, control implementation support and internal audit, taking you through to Stage 1 and Stage 2 with your chosen certification body.", None),
-      ("Readiness assessments", "Assessments against NIST CSF 2.0, PCI DSS v4, Cyber Essentials and sector frameworks, with a scored baseline and a roadmap your leadership can fund.", None),
+      ("Readiness assessments", "Assessments against NIST CSF 2.0, SOC 2, NCSC CAF, COBIT 2019, PCI DSS v4 and Cyber Essentials, with a scored baseline and a roadmap your leadership can fund.", None),
       ("Policies and procedures", "A policy set written for your organisation rather than downloaded from a template library, short enough that people read it and specific enough that auditors accept it.", None),
       ("Supplier and customer assurance", "Help answering security questionnaires, running supplier due diligence, and building the evidence pack that shortens every future enterprise sales cycle.", None),
       ("Internal audit and ongoing support", "Annual internal audit, management review facilitation and surveillance audit preparation on a light retainer, so certification does not lapse the year after you get it.", None),
     ])}
+  </div>
+</section>
+
+<section class="section on-navy">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Frameworks we work to.</h2>
+      <p class="muted">Most clients need one of these because a customer, regulator or insurer has asked for it. We can take you to certification or attestation where the framework offers one, and to a defensible, evidenced position where it does not.</p>
+    </div>
+    <div class="starts">
+      <div class="start"><h3>ISO/IEC 27001:2022</h3><p>Gap analysis, implementation, internal audit and certification support. Our consultants are Lead Auditor certified.</p></div>
+      <div class="start"><h3>Cyber Essentials and Plus</h3><p>The UK government baseline, often a contractual requirement for public sector and supply-chain work.</p></div>
+      <div class="start"><h3>NIST CSF 2.0</h3><p>A tiered maturity assessment across Govern, Identify, Protect, Detect, Respond and Recover, with a target profile and roadmap.</p></div>
+      <div class="start"><h3>SOC 2</h3><p>Readiness, control design and evidence programmes for Type I and Type II, working alongside your chosen CPA firm for the attestation itself.</p></div>
+      <div class="start"><h3>NCSC CAF</h3><p>Cyber Assessment Framework self-assessment and improvement plans for operators of essential services, NIS-regulated firms and their suppliers.</p></div>
+      <div class="start"><h3>COBIT 2019</h3><p>Governance and management objectives for IT, used where the board wants assurance over IT as a whole rather than security alone.</p></div>
+      <div class="start"><h3>PCI DSS v4</h3><p>Scoping, segmentation advice and readiness for self-assessment or QSA review.</p></div>
+      <div class="start"><h3>UK GDPR and data protection</h3><p>Records of processing, DPIAs, breach procedures and the security measures Article 32 expects, aligned to the ISO 27001 controls you already run.</p></div>
+    </div>
   </div>
 </section>
 
