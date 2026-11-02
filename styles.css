@@ -146,7 +146,7 @@ p:last-child { margin-bottom: 0; }
 .ticker-list a { color: rgba(255,255,255,0.85); text-decoration: none; }
 .ticker-list a:hover { color: var(--gold-pale); }
 .ticker-list time { color: var(--slate-on-dark); margin-right: .6rem; font-variant-numeric: tabular-nums; }
-.ticker-track.run .ticker-list { animation: ticker 70s linear infinite; }
+.ticker-track.run .ticker-list { animation: ticker 140s linear infinite; }
 .ticker-track:hover .ticker-list, .ticker-track:focus-within .ticker-list { animation-play-state: paused; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: reduce) {
