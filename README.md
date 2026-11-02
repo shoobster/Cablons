@@ -14,7 +14,7 @@ Static site for www.cablons.com. Plain HTML and CSS, no build step, intended for
 ## Before you publish
 
 1. Social preview image. Add `assets/og-image.png` (1200 x 630) or remove the `og:image` meta tag from each page.
-2. Contact form. The form posts to Formspree. Create a free form at formspree.io, then replace `REPLACE_WITH_FORM_ID` in `contact.html` with the real ID. Formspree's free tier is enough for enquiry volumes. Alternatives that also work on static hosting: Basin, Web3Forms, or a Netlify Forms setup if you host there instead.
+2. Contact form. The form posts to Formspree form `xqppggpd`, which delivers to the address set in the Formspree dashboard. Formspree's free tier is enough for enquiry volumes. Alternatives that also work on static hosting: Basin, Web3Forms, or a Netlify Forms setup if you host there instead.
 3. Check the commitments in the copy. The following statements are written as service promises and should be confirmed or edited before go-live:
    - free retest of remediated findings within 60 days (`index.html`, `penetration-testing.html`)
    - fixed quote within two working days (`index.html`, `penetration-testing.html`)
