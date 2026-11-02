@@ -708,7 +708,7 @@ with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write("</urlset>\n")
 with open(os.path.join(OUT, "robots.txt"), "w") as f:
     f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-with open(os.path.join(OUT, "CNAME.when-ready"), "w") as f:
+with open(os.path.join(OUT, "CNAME"), "w") as f:
     f.write("www.cablons.com\n")
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 print("built", list(pages))

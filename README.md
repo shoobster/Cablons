@@ -9,7 +9,7 @@ Static site for www.cablons.com. Plain HTML and CSS, no build step, intended for
 - `assets/logo.svg` (gold logo, used in header and footer), plus `logo-white.svg` and `logo-black.svg` for other uses
 - `assets/favicon.png`, `apple-touch-icon.png`, `android-chrome.png` from the logo pack
 - `assets/news.json` (security headlines from The Hacker News, refreshed by `.github/workflows/news.yml` every three hours using `tools/fetch_news.py`; shown in the ticker on the home page)
-- `sitemap.xml`, `robots.txt`, `CNAME.when-ready`, `.nojekyll`
+- `sitemap.xml`, `robots.txt`, `CNAME`, `.nojekyll`
 
 ## Before you publish
 
@@ -32,7 +32,7 @@ Static site for www.cablons.com. Plain HTML and CSS, no build step, intended for
 
 1. Create a repository (for example `cablons-site`) and push these files to the `main` branch at the repository root.
 2. In the repository, go to Settings, then Pages. Under Build and deployment choose "Deploy from a branch", branch `main`, folder `/ (root)`.
-3. Custom domain. When the DNS records below are in place, rename `CNAME.when-ready` to `CNAME` (and change the filename in `tools/build.py` so a rebuild keeps it). GitHub then serves the site at www.cablons.com and redirects the github.io address there. Do not add the `CNAME` file before DNS is ready: GitHub redirects the github.io preview to the custom domain as soon as the file exists, which is the old site until DNS moves. Tick "Enforce HTTPS" once the certificate is issued (usually within an hour).
+3. Custom domain. The `CNAME` file sets www.cablons.com as the custom domain on every deployment. GitHub serves the site there and redirects the github.io address to it. Tick "Enforce HTTPS" in Settings, Pages once the certificate is issued (usually within an hour of the DNS check passing).
 4. DNS at your registrar:
    - `www` CNAME record pointing to `<your-github-username>.github.io`
    - Apex `cablons.com` A records pointing to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153, so the bare domain redirects to www.
