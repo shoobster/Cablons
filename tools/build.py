@@ -84,7 +84,7 @@ FOOT = f"""
     <div class="cols">
       <div>
         <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Cablons Cyber"></a>
-        <p>Independent cyber security consultancy working on site and remotely across the UK.</p>
+        <p>Independent cyber security consultancy based in West Yorkshire, working on site and remotely across the UK.</p>
       </div>
       <div>
         <h4>Services</h4>
@@ -101,7 +101,7 @@ FOOT = f"""
         <ul>
           <li><a href="mailto:sales@cablons.com">sales@cablons.com</a></li>
           <li><a href="{CAL}">Book a free consultation</a></li>
-          <li>On site or remote, UK wide</li>
+          <li>Based in West Yorkshire<br>On site or remote across the UK</li>
         </ul>
       </div>
     </div>
@@ -193,7 +193,7 @@ def ledger(rows):
 pages = {}
 
 pages["index.html"] = ("Fractional CISO, penetration testing and GRC consultancy | Cablons Cyber",
-"Independent UK cyber security consultancy offering fractional CISO services, penetration testing and ISO 27001 and GRC consultancy, on site or remotely across the UK.",
+"Independent UK cyber security consultancy offering fractional CISO services, penetration testing and ISO 27001 and GRC consultancy. Based in West Yorkshire, working on site or remotely across the UK.",
 hero(None, "Consultants who have run the blue team, not just tested it.",
      "Cablons Cyber is an independent consultancy whose people have defended networks, tested them and audited them. We give you fractional CISO leadership without the full-time cost, test your defences, and close the gaps auditors and customers care about.",
      f'<a class="btn btn-gold" href="{CAL}">Book a free consultation</a><a class="btn btn-ghost" href="#services">See what we do</a>') + f"""
@@ -469,8 +469,8 @@ hero(None, "Senior security leadership, a few days a month.",
 """)
 
 pages["about.html"] = ("About Cablons Cyber | Independent UK cyber security consultancy",
-"Cablons Cyber Limited is an independent cyber security and GRC consultancy working on site and remotely across the UK, with CISSP and ISO 27001 Lead Auditor certified consultants from blue team, testing and audit backgrounds.",
-hero(None, "Independent, consultant-led, UK wide.",
+"Cablons Cyber Limited is an independent cyber security and GRC consultancy based in West Yorkshire, working on site and remotely across the UK, with CISSP and ISO 27001 Lead Auditor certified consultants from blue team, testing and audit backgrounds.",
+hero(None, "Independent, consultant-led, based in West Yorkshire.",
      "Cablons Cyber was founded to give smaller organisations the quality of security advice that is normally reserved for enterprises that can afford a full-time CISO.",
      "", seed=19, pos="bottom") + f"""
 
@@ -478,7 +478,7 @@ hero(None, "Independent, consultant-led, UK wide.",
   <div class="wrap split">
     <div class="prose">
       <h2>Who we are</h2>
-      <p>Cablons Cyber Limited is a UK registered consultancy working with clients on site or remotely anywhere in the UK. We are deliberately small, and every engagement is led by a senior consultant rather than handed down. Our consultants hold CISSP and ISO 27001 Lead Auditor certifications and have come to consultancy from the defending side: the founder spent a decade on the blue team at an ISP, running first-line security and then the network team, before fifteen years in penetration testing, ISO 27001 audit and implementation, and advisory work. We hire and partner with people who have the same mix of hands-on and governance experience.</p>
+      <p>Cablons Cyber Limited is a UK registered consultancy based in West Yorkshire, working with clients on site across the North of England and beyond, and remotely anywhere in the UK. We are deliberately small, and every engagement is led by a senior consultant rather than handed down. Our consultants hold CISSP and ISO 27001 Lead Auditor certifications and have come to consultancy from the defending side: the founder spent a decade on the blue team at an ISP, running first-line security and then the network team, before fifteen years in penetration testing, ISO 27001 audit and implementation, and advisory work. We hire and partner with people who have the same mix of hands-on and governance experience.</p>
       <h2>How we think about security</h2>
       <p>Security is a business function. The point of a penetration test is not a long list of findings; it is a shorter list of things that would actually hurt, fixed. The point of ISO 27001 is not the certificate; it is a business that can show a customer, an insurer or a regulator how it manages risk, and keep doing so after the auditor leaves.</p>
       <p class="pull">We scope tightly, write in plain English, rank by business impact rather than CVSS alone, and tell clients when they are about to spend money on something that will not reduce risk.</p>
@@ -497,7 +497,7 @@ hero(None, "Independent, consultant-led, UK wide.",
         <dt>Registered name</dt><dd>Cablons Cyber Limited</dd>
         <dt>Company number</dt><dd>15090311, registered in England and Wales</dd>
         <dt>Consultant credentials</dt><dd>CISSP, ISO/IEC 27001 Lead Auditor</dd>
-        <dt>Coverage</dt><dd>On site or remote, anywhere in the UK</dd>
+        <dt>Coverage</dt><dd>Based in West Yorkshire. On site across the North of England and the wider UK, or remote anywhere.</dd>
       </dl>
     </div>
   </div>
@@ -549,7 +549,7 @@ hero(None, "Let's talk about what you need.",
       <dl>
         <dt>Email</dt><dd><a href="mailto:sales@cablons.com">sales@cablons.com</a></dd>
         <dt>Book directly</dt><dd><a href="{CAL}">Choose a time on our calendar</a></dd>
-        <dt>Where we work</dt><dd>On site or remotely, anywhere in the UK.</dd>
+        <dt>Where we work</dt><dd>Based in West Yorkshire. We work on site across the North of England and the wider UK, and remotely anywhere.</dd>
         <dt>Hours</dt><dd>Monday to Friday, 9am to 5.30pm. Incident support for retained clients is available outside these hours.</dd>
       </dl>
     </div>
