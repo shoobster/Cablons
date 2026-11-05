@@ -1,7 +1,7 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-04T19:54:03Z",
+  "updated": "2026-11-05T01:29:59Z",
   "items": [
     {
       "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
