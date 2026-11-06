@@ -212,9 +212,36 @@ p:last-child { margin-bottom: 0; }
 
 /* Process trace (a real sequence) */
 .process { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding-top: 2.2rem; }
-.process::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 1px; background: linear-gradient(90deg, var(--gold-deep), var(--gold-pale), var(--gold-deep)); opacity: .7; }
+/* faint base line */
+.process::before { content: ""; position: absolute; left: 0; right: calc(25% - 1.5rem); top: 7px; height: 1px; background: var(--gold); opacity: .25; }
 .process .step { position: relative; }
-.process .step::before { content: ""; position: absolute; left: 0; top: -2.2rem; width: 15px; height: 15px; border-radius: 50%; background: var(--bone); border: 1.5px solid var(--gold); box-shadow: 0 0 0 4px var(--bone); }
+/* node */
+.process .step::before {
+  content: ""; position: absolute; left: 0; top: -2.2rem; width: 15px; height: 15px; border-radius: 50%; z-index: 2;
+  background: var(--bone); border: 1.5px solid var(--gold); box-shadow: 0 0 0 4px var(--bone);
+  transition: background-color .35s ease, box-shadow .35s ease;
+}
+/* pulse segment from this node to the next (hidden on last) */
+.process .step::after {
+  content: ""; position: absolute; left: 15px; top: calc(-2.2rem + 7px); height: 1.5px; width: calc(100% + 2rem - 15px); z-index: 1;
+  background: linear-gradient(90deg, var(--gold-deep) 0%, var(--gold-pale) 85%, #fff 100%);
+  transform: scaleX(0); transform-origin: left center;
+}
+.process .step:last-child::after { display: none; }
+/* lit sequence: node i lights at i*1.1s, its segment travels for .8s after */
+.process.lit .step::before { animation: node-on .45s ease forwards; animation-delay: calc(var(--n) * 1.1s); }
+.process.lit .step::after { animation: pulse-travel .8s cubic-bezier(.4, 0, .2, 1) forwards; animation-delay: calc(var(--n) * 1.1s + .3s); }
+@keyframes node-on {
+  0%   { background: var(--bone); box-shadow: 0 0 0 4px var(--bone); }
+  50%  { background: var(--gold-pale); box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.28), 0 0 18px 4px rgba(201,162,74,.55); }
+  100% { background: var(--gold); box-shadow: 0 0 0 4px var(--bone), 0 0 10px 1px rgba(201,162,74,.45); }
+}
+@keyframes pulse-travel { to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .process .step::before { background: var(--gold); }
+  .process .step::after { transform: scaleX(1); }
+  .process.lit .step::before, .process.lit .step::after { animation: none; }
+}
 .process h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: .4rem; }
 .process p { color: var(--slate); margin: 0; font-size: 1rem; }
 
@@ -299,7 +326,7 @@ p:last-child { margin-bottom: 0; }
   .cta .actions { justify-content: flex-start; }
   .process, .starts { grid-template-columns: 1fr 1fr; }
   .process::before { display: none; }
-  .process .step::before { display: none; }
+  .process .step::before, .process .step::after { display: none; }
   .process { padding-top: 0; }
   .process .step { border-top: 1px solid var(--rule); padding-top: 1rem; }
   .site-footer .cols { grid-template-columns: 1fr 1fr; }

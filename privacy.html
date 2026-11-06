@@ -222,8 +222,13 @@
         es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('draw'); io.unobserve(e.target); } });
       }, { threshold: 0.2 });
       arts.forEach(function (a) { io.observe(a); });
+      var pio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('lit'); pio.unobserve(e.target); } });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('.process').forEach(function (p) { pio.observe(p); });
     } else {
       arts.forEach(function (a) { a.classList.add('draw'); });
+      document.querySelectorAll('.process').forEach(function (p) { p.classList.add('lit'); });
     }
   })();
 </script>
