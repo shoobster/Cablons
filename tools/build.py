@@ -136,8 +136,13 @@ FOOT = f"""
         es.forEach(function (e) {{ if (e.isIntersecting) {{ e.target.classList.add('draw'); io.unobserve(e.target); }} }});
       }}, {{ threshold: 0.2 }});
       arts.forEach(function (a) {{ io.observe(a); }});
+      var pio = new IntersectionObserver(function (es) {{
+        es.forEach(function (e) {{ if (e.isIntersecting) {{ e.target.classList.add('lit'); pio.unobserve(e.target); }} }});
+      }}, {{ threshold: 0.5 }});
+      document.querySelectorAll('.process').forEach(function (p) {{ pio.observe(p); }});
     }} else {{
       arts.forEach(function (a) {{ a.classList.add('draw'); }});
+      document.querySelectorAll('.process').forEach(function (p) {{ p.classList.add('lit'); }});
     }}
   }})();
 </script>
@@ -253,10 +258,10 @@ hero(None, "Consultants who have run the blue team, not just tested it.",
       <p class="muted">Every engagement runs the same way, whether it is a two-day test or a nine-month certification programme.</p>
     </div>
     <div class="process">
-      <div class="step"><h3>Scoping call</h3><p>Thirty minutes to understand what you need evidence of, what is in scope and what is off limits. You get a fixed quote within two working days.</p></div>
-      <div class="step"><h3>Delivery</h3><p>Testing or assessment work runs to an agreed window, with a named contact and daily check-ins. Critical findings are raised the day they are found.</p></div>
-      <div class="step"><h3>Reporting</h3><p>A risk-ranked findings list with reproduction steps, business impact and practical remediation. Presented live, not just emailed.</p></div>
-      <div class="step"><h3>Retest and support</h3><p>Fixes are verified and the report updated so you have clean evidence for customers, auditors and insurers.</p></div>
+      <div class="step" style="--n:0"><h3>Scoping call</h3><p>Thirty minutes to understand what you need evidence of, what is in scope and what is off limits. You get a fixed quote within two working days.</p></div>
+      <div class="step" style="--n:1"><h3>Delivery</h3><p>Testing or assessment work runs to an agreed window, with a named contact and daily check-ins. Critical findings are raised the day they are found.</p></div>
+      <div class="step" style="--n:2"><h3>Reporting</h3><p>A risk-ranked findings list with reproduction steps, business impact and practical remediation. Presented live, not just emailed.</p></div>
+      <div class="step" style="--n:3"><h3>Retest and support</h3><p>Fixes are verified and the report updated so you have clean evidence for customers, auditors and insurers.</p></div>
     </div>
   </div>
 </section>
