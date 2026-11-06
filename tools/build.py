@@ -10,7 +10,7 @@ SITE = "https://www.cablons.com"
 
 NAV = [
     ("vciso.html", "Fractional CISO"),
-    ("penetration-testing.html", "Pen testing"),
+    ("penetration-testing.html", "Pen Testing"),
     ("grc-consultancy.html", "GRC"),
     ("msp-partners.html", "For MSPs"),
     ("insights.html", "Insights"),
@@ -19,6 +19,47 @@ NAV = [
 ]
 
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
+
+
+SMALL_WORDS = {"a", "an", "the", "to", "of", "and", "or", "for", "in", "on", "at", "by", "with", "from", "but", "nor", "as", "vs", "via", "per"}
+
+def title_case(text):
+    """Capitalise each word except short joining words; keep existing capitals (ISO, vCISO, MSPs)."""
+    import re as _re
+    def cap(word):
+        if not word or not word[0].isalpha():
+            return word
+        if _re.match(r"^v\d", word):          # version markers such as v4
+            return word
+        return word[0].upper() + word[1:]
+    out = []
+    tokens = _re.split(r"(\s+)", text)
+    words = [t for t in tokens if t.strip()]
+    last = words[-1] if words else None
+    first = True
+    prev_end_punct = False
+    for tok in tokens:
+        if not tok.strip():
+            out.append(tok); continue
+        core = tok
+        lower = core.lower().strip(".,:;?!()'\"")
+        if first or prev_end_punct or tok is last or lower not in SMALL_WORDS:
+            core = "-".join(cap(part) for part in core.split("-"))
+        out.append(core)
+        first = False
+        prev_end_punct = tok.rstrip()[-1:] in ".:?!"
+    return "".join(out)
+
+def apply_title_case(html):
+    import re as _re
+    def fix(m):
+        inner = m.group(2)
+        if "<" in inner:
+            return m.group(0)
+        return m.group(1) + title_case(inner) + m.group(3)
+    html = _re.sub(r"(<h[123][^>]*>)(.*?)(</h[123]>)", fix, html, flags=_re.S)
+    html = _re.sub(r"(<title>)(.*?)(</title>)", lambda m: m.group(1) + " | ".join(title_case(x) for x in m.group(2).split(" | ")) + m.group(3), html)
+    return html
 
 def head(title, desc, path):
     url = SITE + "/" + ("" if path == "index.html" else path)
@@ -702,7 +743,7 @@ hero(None, "That page does not exist.", "The link may be out of date. Everything
 os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
 for path, (title, desc, body) in pages.items():
     with open(os.path.join(OUT, path), "w") as f:
-        f.write(head(title, desc, path) + body + FOOT)
+        f.write(apply_title_case(head(title, desc, path) + body + FOOT))
 
 urls = [p for p in pages if p != "404.html"]
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
