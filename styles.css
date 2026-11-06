@@ -216,9 +216,18 @@ p:last-child { margin-bottom: 0; }
 .process .step { position: relative; }
 .process .step::before {
   content: ""; position: absolute; left: 0; top: -2.2rem; width: 15px; height: 15px; border-radius: 50%; z-index: 2;
-  background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%);
-  border: 1.5px solid var(--gold); box-shadow: 0 0 0 4px var(--bone);
+  background: var(--bone); border: 1.5px solid var(--gold); box-shadow: 0 0 0 4px var(--bone);
 }
+/* gradient fill disc, faded in and out by opacity */
+.process .step h3::before {
+  content: ""; position: absolute; left: 1.5px; top: calc(-2.2rem + 1.5px); width: 12px; height: 12px; border-radius: 50%; z-index: 3;
+  background: linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); opacity: 0; pointer-events: none;
+}
+.process.lit .step h3::before { animation-duration: 11s; animation-timing-function: linear; animation-iteration-count: infinite; }
+.process.lit .step:nth-child(1) h3::before { animation-name: fill-1; }
+.process.lit .step:nth-child(2) h3::before { animation-name: fill-2; }
+.process.lit .step:nth-child(3) h3::before { animation-name: fill-3; }
+.process.lit .step:nth-child(4) h3::before { animation-name: fill-4; }
 /* the pulse: a short glowing comet that travels this step's stretch of line */
 .process .step::after {
   content: ""; position: absolute; left: 15px; top: calc(-2.2rem + 5.5px); width: 96px; height: 4px; border-radius: 2px; z-index: 1; opacity: 0;
@@ -240,13 +249,18 @@ p:last-child { margin-bottom: 0; }
 @keyframes comet-2 { 0%, 18% { opacity: 0; left: 15px; } 18.8% { opacity: 1; } 35% { opacity: 1; } 36%, 100% { opacity: 0; left: calc(100% + 2rem - 96px); } }
 @keyframes comet-3 { 0%, 36% { opacity: 0; left: 15px; } 36.8% { opacity: 1; } 53% { opacity: 1; } 54%, 100% { opacity: 0; left: calc(100% + 2rem - 96px); } }
 @keyframes comet-4 { 0%, 54% { opacity: 0; left: 15px; } 54.8% { opacity: 1; } 71% { opacity: 1; } 72%, 100% { opacity: 0; left: calc(100% - 96px); } }
-/* each node flares as the pulse reaches it and stays lit; all fade together over three seconds once the pulse has finished */
-@keyframes flash-1 { 0% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } 1.5% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 5% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-2 { 0%, 18% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } 19.5% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 23% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-3 { 0%, 36% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } 37.5% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 41% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-4 { 0%, 54% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } 55.5% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 59% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { background-image: linear-gradient(rgba(239,233,219,0), rgba(239,233,219,0)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { background-image: linear-gradient(rgba(239,233,219,1), rgba(239,233,219,1)), linear-gradient(100deg, #905e26 0%, #e9d27a 48%, #905e26 100%); box-shadow: 0 0 0 4px var(--bone); } }
+/* ring glow: flare as the pulse arrives, soft glow while lit, fade over three seconds after the pass */
+@keyframes flash-1 { 0% { box-shadow: 0 0 0 4px var(--bone); } 1.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 5% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-2 { 0%, 18% { box-shadow: 0 0 0 4px var(--bone); } 19.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 23% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-3 { 0%, 36% { box-shadow: 0 0 0 4px var(--bone); } 37.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 41% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-4 { 0%, 54% { box-shadow: 0 0 0 4px var(--bone); } 55.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 59% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
+/* gradient fill: appears with the flare, holds, fades over three seconds */
+@keyframes fill-1 { 0% { opacity: 0; } 1.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes fill-2 { 0%, 18% { opacity: 0; } 19.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes fill-3 { 0%, 36% { opacity: 0; } 37.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes fill-4 { 0%, 54% { opacity: 0; } 55.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
-  .process.lit .step::before, .process.lit .step::after { animation: none; }
+  .process.lit .step::before, .process.lit .step::after, .process.lit .step h3::before { animation: none; }
 }
 .process h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: .4rem; }
 .process p { color: var(--slate); margin: 0; font-size: 1rem; }
@@ -332,7 +346,7 @@ p:last-child { margin-bottom: 0; }
   .cta .actions { justify-content: flex-start; }
   .process, .starts { grid-template-columns: 1fr 1fr; }
   .process::before { display: none; }
-  .process .step::before, .process .step::after { display: none; }
+  .process .step::before, .process .step::after, .process .step h3::before { display: none; }
   .process { padding-top: 0; }
   .process .step { border-top: 1px solid var(--rule); padding-top: 1rem; }
   .site-footer .cols { grid-template-columns: 1fr 1fr; }
