@@ -249,16 +249,16 @@ p:last-child { margin-bottom: 0; }
 @keyframes comet-2 { 0%, 18% { opacity: 0; left: 15px; } 18.8% { opacity: 1; } 35% { opacity: 1; } 36%, 100% { opacity: 0; left: calc(100% + 2rem - 96px); } }
 @keyframes comet-3 { 0%, 36% { opacity: 0; left: 15px; } 36.8% { opacity: 1; } 53% { opacity: 1; } 54%, 100% { opacity: 0; left: calc(100% + 2rem - 96px); } }
 @keyframes comet-4 { 0%, 54% { opacity: 0; left: 15px; } 54.8% { opacity: 1; } 71% { opacity: 1; } 72%, 100% { opacity: 0; left: calc(100% - 96px); } }
-/* ring glow: flare as the pulse arrives, soft glow while lit, fade over three seconds after the pass */
-@keyframes flash-1 { 0% { box-shadow: 0 0 0 4px var(--bone); } 1.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 5% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-2 { 0%, 18% { box-shadow: 0 0 0 4px var(--bone); } 19.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 23% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-3 { 0%, 36% { box-shadow: 0 0 0 4px var(--bone); } 37.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 41% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
-@keyframes flash-4 { 0%, 54% { box-shadow: 0 0 0 4px var(--bone); } 55.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 59% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 73% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 100% { box-shadow: 0 0 0 4px var(--bone); } }
-/* gradient fill: appears with the flare, holds, fades over three seconds */
-@keyframes fill-1 { 0% { opacity: 0; } 1.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes fill-2 { 0%, 18% { opacity: 0; } 19.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes fill-3 { 0%, 36% { opacity: 0; } 37.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes fill-4 { 0%, 54% { opacity: 0; } 55.5% { opacity: 1; } 73% { opacity: 1; } 100% { opacity: 0; } }
+/* ring glow: flare as the pulse arrives, hold, then fade over three seconds so each node is gone by the time the pulse is two nodes on */
+@keyframes flash-1 { 0% { box-shadow: 0 0 0 4px var(--bone); } 1.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 5% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 9% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 36%, 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-2 { 0%, 18% { box-shadow: 0 0 0 4px var(--bone); } 19.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 23% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 27% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 54%, 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-3 { 0%, 36% { box-shadow: 0 0 0 4px var(--bone); } 37.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 41% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 45% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 72%, 100% { box-shadow: 0 0 0 4px var(--bone); } }
+@keyframes flash-4 { 0%, 54% { box-shadow: 0 0 0 4px var(--bone); } 55.5% { box-shadow: 0 0 0 4px var(--bone), 0 0 0 10px rgba(201,162,74,.3), 0 0 18px 5px rgba(201,162,74,.65); } 59% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 63% { box-shadow: 0 0 0 4px var(--bone), 0 0 8px 1px rgba(201,162,74,.4); } 90%, 100% { box-shadow: 0 0 0 4px var(--bone); } }
+/* gradient fill on the same timing */
+@keyframes fill-1 { 0% { opacity: 0; } 1.5% { opacity: 1; } 9% { opacity: 1; } 36%, 100% { opacity: 0; } }
+@keyframes fill-2 { 0%, 18% { opacity: 0; } 19.5% { opacity: 1; } 27% { opacity: 1; } 54%, 100% { opacity: 0; } }
+@keyframes fill-3 { 0%, 36% { opacity: 0; } 37.5% { opacity: 1; } 45% { opacity: 1; } 72%, 100% { opacity: 0; } }
+@keyframes fill-4 { 0%, 54% { opacity: 0; } 55.5% { opacity: 1; } 63% { opacity: 1; } 90%, 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .process.lit .step::before, .process.lit .step::after, .process.lit .step h3::before { animation: none; }
 }
