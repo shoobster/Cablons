@@ -1,8 +1,18 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-05T20:05:30Z",
+  "updated": "2026-11-06T01:37:44Z",
   "items": [
+    {
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "date": "2026-11-05"
+    },
     {
       "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
       "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
@@ -51,16 +61,6 @@
     {
       "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
       "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-      "date": "2026-11-04"
-    },
-    {
-      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
-      "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
-      "date": "2026-11-04"
-    },
-    {
-      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
       "date": "2026-11-04"
     }
   ]
