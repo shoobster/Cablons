@@ -1,8 +1,13 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-10T23:31:16Z",
+  "updated": "2026-11-11T06:43:58Z",
   "items": [
+    {
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "date": "2026-11-11"
+    },
     {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
       "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
@@ -56,11 +61,6 @@
     {
       "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
       "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
-      "date": "2026-11-10"
-    },
-    {
-      "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
       "date": "2026-11-10"
     }
   ]
