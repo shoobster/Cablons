@@ -1,8 +1,48 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-18T11:55:28Z",
+  "updated": "2026-11-18T20:41:52Z",
   "items": [
+    {
+      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+      "date": "2026-11-18"
+    },
     {
       "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
       "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
@@ -22,46 +62,6 @@
       "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
       "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
       "date": "2026-11-18"
-    },
-    {
-      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-      "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
-      "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-      "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
-      "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
-      "date": "2026-11-17"
     }
   ]
 }
