@@ -1,8 +1,33 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-18T01:01:39Z",
+  "updated": "2026-11-18T11:55:28Z",
   "items": [
+    {
+      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "date": "2026-11-18"
+    },
     {
       "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
       "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
@@ -37,31 +62,6 @@
       "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
       "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
       "date": "2026-11-17"
-    },
-    {
-      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
-      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
-      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-      "date": "2026-11-17"
-    },
-    {
-      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-      "date": "2026-11-16"
     }
   ]
 }
