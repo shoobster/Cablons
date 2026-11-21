@@ -1,8 +1,23 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-21T11:23:23Z",
+  "updated": "2026-11-21T19:27:31Z",
   "items": [
+    {
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "date": "2026-11-21"
+    },
     {
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
       "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
@@ -46,21 +61,6 @@
     {
       "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
       "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
       "date": "2026-11-20"
     }
   ]
