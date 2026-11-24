@@ -1,8 +1,13 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-24T13:56:47Z",
+  "updated": "2026-11-24T23:56:48Z",
   "items": [
+    {
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "date": "2026-11-24"
+    },
     {
       "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
       "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
@@ -56,11 +61,6 @@
     {
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
       "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
       "date": "2026-11-23"
     }
   ]
