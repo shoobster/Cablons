@@ -1,8 +1,38 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-26T03:38:40Z",
+  "updated": "2026-11-26T17:04:46Z",
   "items": [
+    {
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "date": "2026-11-26"
+    },
+    {
+      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+      "date": "2026-11-26"
+    },
     {
       "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
       "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
@@ -32,36 +62,6 @@
       "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
       "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
       "date": "2026-11-25"
-    },
-    {
-      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
-      "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
-      "date": "2026-11-25"
-    },
-    {
-      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-      "date": "2026-11-25"
-    },
-    {
-      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
-      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
-      "date": "2026-11-25"
-    },
-    {
-      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
-      "date": "2026-11-24"
     }
   ]
 }
