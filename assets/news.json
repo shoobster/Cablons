@@ -1,8 +1,13 @@
 {
   "source": "The Hacker News",
   "source_url": "https://thehackernews.com/",
-  "updated": "2026-11-26T17:04:46Z",
+  "updated": "2026-11-27T01:47:26Z",
   "items": [
+    {
+      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+      "date": "2026-11-27"
+    },
     {
       "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
       "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
@@ -56,11 +61,6 @@
     {
       "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
       "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
-      "date": "2026-11-25"
-    },
-    {
-      "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
       "date": "2026-11-25"
     }
   ]
